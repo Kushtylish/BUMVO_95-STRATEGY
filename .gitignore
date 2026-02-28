@@ -251,7 +251,7 @@ def bootstrap_optimise(returns, prices, L_grid, pos_sizing_methods,
             sharpes = []
             for boot_ret in tqdm(boot_returns_list, desc=f'L={L}, {method}', leave=False):
                 boot_ret = np.asarray(boot_ret).ravel()
-                # Reconstruct price series from bootstrapped returns
+                # Reconstruct the price series from bootstrapped returns
                 start_price = prices.iloc[0]
                 boot_price = start_price * np.exp(np.cumsum(boot_ret))
                 # Use integer index (no date assumptions inside bootstrap)
