@@ -1,0 +1,6 @@
+Here is the list of Python dependencies:
+numpy
+pandas
+matplotlib
+arch
+tqdm
